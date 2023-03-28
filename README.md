@@ -1,5 +1,7 @@
 # README
 
+Applicazione di stuio, creata durante il corso ruby complete, versione rails 6
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
