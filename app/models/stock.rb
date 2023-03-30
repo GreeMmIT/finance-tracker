@@ -7,7 +7,13 @@ class Stock < ApplicationRecord
                                   endpoint: 'https://cloud.iexapis.com/v1'
                                 )
     #return client.price(ticker_symbol) non funziona per colpa delle policy del sito
-    return rand(1.5..9999.0)
+    #return rand(1.5..9999.0)
+    begin
+      new(ticker:ticker_symbol ,name: 'GreeMm Team',last_price:rand(1.5..9999.0))
+    rescue => exception 
+      return nil 
+    end 
+
   end
 
 end
